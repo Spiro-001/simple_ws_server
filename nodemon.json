@@ -1,0 +1,4 @@
+{
+  "verbose": true,
+  "watch": ["index.ts", "server/*", "util/*", "public/index.html"]
+}

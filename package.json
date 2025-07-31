@@ -1,0 +1,37 @@
+{
+  "name": "ws_stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "dotenv": "^17.2.1",
+    "http": "^0.0.1-security",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "ws": "^8.18.3"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.9"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@types/ws": "^8.18.1",
+    "autoprefixer": "^10.4.21",
+    "chalk": "^4.1.2",
+    "esbuild": "^0.25.8",
+    "esbuild-serve": "^1.0.1",
+    "esbuild-style-plugin": "^1.6.3",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

@@ -4,28 +4,40 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "dev:fe": "tsx hmr.ts",
+    "dev:be": "npx nodemon --exec tsx ./index.ts",
+    "build": "esbuild view/index.tsx --bundle --outdir=public --minify --sourcemap --loader:.css=css",
+    "tailwind:build": "tailwindcss -i ./view/index.css -o ./public/index.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "dotenv": "^17.2.1",
+    "highlight.js": "^11.11.1",
     "http": "^0.0.1-security",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-syntax-highlighter": "^15.6.1",
+    "uuid4": "^2.0.3",
     "ws": "^8.18.3"
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.9"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@types/uuid4": "^2.0.3",
     "@types/ws": "^8.18.1",
     "autoprefixer": "^10.4.21",
     "chalk": "^4.1.2",
     "esbuild": "^0.25.8",
+    "esbuild-plugin-tailwindcss": "^2.0.1",
     "esbuild-serve": "^1.0.1",
     "esbuild-style-plugin": "^1.6.3",
     "nodemon": "^3.1.10",

@@ -10,4 +10,5 @@ RESET="\033[0m"
 
 echo -e "${GREEN}Running init.sh...${RESET}"
 
-npx nodemon --exec tsx ./index.ts & npx tsx ./hmr.ts
+# npx nodemon --exec tsx ./index.ts & 
+npx tsx ./hmr.ts
